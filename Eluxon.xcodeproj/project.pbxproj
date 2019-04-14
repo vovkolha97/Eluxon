@@ -12,6 +12,8 @@
 		F20955AD226373AC00FF9224 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F20955AB226373AC00FF9224 /* Main.storyboard */; };
 		F20955AF226373AE00FF9224 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F20955AE226373AE00FF9224 /* Assets.xcassets */; };
 		F20955B2226373AE00FF9224 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F20955B0226373AE00FF9224 /* LaunchScreen.storyboard */; };
+		F20955BC226381CF00FF9224 /* SwitchStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20955BB226381CF00FF9224 /* SwitchStatus.swift */; };
+		F20955BE2263823100FF9224 /* Toggleble.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20955BD2263823100FF9224 /* Toggleble.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		F20955AE226373AE00FF9224 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F20955B1226373AE00FF9224 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F20955B3226373AE00FF9224 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F20955BB226381CF00FF9224 /* SwitchStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchStatus.swift; sourceTree = "<group>"; };
+		F20955BD2263823100FF9224 /* Toggleble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toggleble.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 		F20955A6226373AC00FF9224 /* Eluxon */ = {
 			isa = PBXGroup;
 			children = (
+				F20955BA2263819100FF9224 /* Protocols */,
+				F20955B92263818200FF9224 /* Enums */,
 				F20955A7226373AC00FF9224 /* AppDelegate.swift */,
 				F20955A9226373AC00FF9224 /* ViewController.swift */,
 				F20955AB226373AC00FF9224 /* Main.storyboard */,
@@ -62,6 +68,22 @@
 				F20955B3226373AE00FF9224 /* Info.plist */,
 			);
 			path = Eluxon;
+			sourceTree = "<group>";
+		};
+		F20955B92263818200FF9224 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				F20955BB226381CF00FF9224 /* SwitchStatus.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		F20955BA2263819100FF9224 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F20955BD2263823100FF9224 /* Toggleble.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +159,8 @@
 			files = (
 				F20955AA226373AC00FF9224 /* ViewController.swift in Sources */,
 				F20955A8226373AC00FF9224 /* AppDelegate.swift in Sources */,
+				F20955BC226381CF00FF9224 /* SwitchStatus.swift in Sources */,
+				F20955BE2263823100FF9224 /* Toggleble.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +309,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9WU55MK2SW;
 				INFOPLIST_FILE = Eluxon/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +328,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9WU55MK2SW;
 				INFOPLIST_FILE = Eluxon/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
